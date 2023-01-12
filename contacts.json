@@ -1,0 +1,23 @@
+{
+    "contact":{
+        "firstName": "Thomas", 
+        "lastName": "Nielson", 
+        "email":"thomas.elliott.nielson@gmail.com", 
+        "favoriteColor":"blue",
+        "birthday":"03/08/1986"
+    },
+    "contact2":{
+        "firstName": "Bob", 
+        "lastName": "Howdy", 
+        "email":"Bobs.Your.Uncle@gmail.com", 
+        "favoriteColor":"Rainbow",
+        "birthday":"04/16/1969"
+    },
+    "contact3":{
+        "firstName": "Christina", 
+        "lastName": "Pentacosta", 
+        "email":"C.Pentacosta54@gmail.com", 
+        "favoriteColor":"puruple",
+        "birthday":"09/30/1979"
+    }
+}
