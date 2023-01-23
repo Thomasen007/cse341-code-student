@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,15 @@
     "mongodb": "^4.13.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.8.3"
   }
 }
