@@ -32,20 +32,20 @@ content-type: application/json
     "birthday":"08/29/1958"
 }
 ### Delete Contact
-DELETE http://localhost:8080/contacts/63ceff0e8b1617f07d412455
+DELETE http://localhost:8080/contacts/63cefd387e1d065539d37291
 
 // PRODUCTION Deploy 
 ### 
-GET https://cse341-week2-qtdl.onrender.com/contacts
+GET https://cse341-week3-crud.onrender.com/contacts
 ### 
-GET https://cse341-week2-qtdl.onrender.com/contacts/63ccd4ea79a9824d637d338e 
+GET https://cse341-week3-crud.onrender.com/contacts/63ccd4ea79a9824d637d338e 
 ### 
-GET https://cse341-week2-qtdl.onrender.com/contacts/63ccd4ea79a9824d637d338f 
+GET https://cse341-week3-crud.onrender.com/contacts/63ccd4ea79a9824d637d338f 
 ### 
-GET https://cse341-week2-qtdl.onrender.com/contacts/63ccd4ea79a9824d637d3390
+GET https://cse341-week3-crud.onrender.com/contacts/63ccd4ea79a9824d637d3390
 
 ### Create Contact 
-POST http://localhost:8080/contacts HTTP/1.1
+POST https://cse341-week3-crud.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
@@ -57,7 +57,7 @@ content-type: application/json
 }
 
 ### Replace Contact
-PUT http://localhost:8080/contacts/63cefd387e1d065539d37291 HTTP/1.1
+PUT https://cse341-week3-crud.onrender.com/contacts/63cf041f2ca073049fcbe608 HTTP/1.1
 content-type: application/json
 
 {
@@ -68,4 +68,4 @@ content-type: application/json
     "birthday":"08/29/1958"
 }
 ### Delete Contact
-DELETE http://localhost:8080/contacts/63ceff0e8b1617f07d412455
+DELETE https://cse341-week3-crud.onrender.com/contacts/63cf041f2ca073049fcbe608
