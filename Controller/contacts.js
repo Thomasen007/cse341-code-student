@@ -43,11 +43,7 @@ const updateContact = async (req, res) => {
     birthday: req.body.birthday
   };
   const userId = new ObjectId(req.params.id);
-  const result = await mongodb
-    .getDb()
-    .db()
-    .collection('contacts')
-    .replaceOne({ _id: userId }, contact);
+  const result = await mongodb.getDb().db().collection('contacts').replaceOne({ _id: userId }, contact);
   console.log(result);
   if (result.modifiedCount > 0) {
     res.status(204).send();
