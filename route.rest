@@ -21,7 +21,7 @@ content-type: application/json
 }
 
 ### Replace Contact
-PUT http://localhost:8080/contacts/63cefd387e1d065539d37291 HTTP/1.1
+PUT http://localhost:8080/contacts/63cf4fe181828ead1d8684db HTTP/1.1
 content-type: application/json
 
 {
@@ -32,7 +32,7 @@ content-type: application/json
     "birthday":"08/29/1958"
 }
 ### Delete Contact
-DELETE http://localhost:8080/contacts/63cefd387e1d065539d37291
+DELETE http://localhost:8080/contacts/63cf4fe181828ead1d8684db
 
 
 
@@ -60,7 +60,7 @@ content-type: application/json
 }
 
 ### Replace Contact
-PUT https://cse341-week3-crud.onrender.com/contacts/63cf041f2ca073049fcbe608 HTTP/1.1
+PUT https://cse341-week3-crud.onrender.com/contacts/63cf5002d2115254edbf421a HTTP/1.1
 content-type: application/json
 
 {
@@ -71,4 +71,4 @@ content-type: application/json
     "birthday":"08/29/1958"
 }
 ### Delete Contact
-DELETE https://cse341-week3-crud.onrender.com/contacts/63cf041f2ca073049fcbe608
+DELETE https://cse341-week3-crud.onrender.com/contacts/63cf5002d2115254edbf421a
