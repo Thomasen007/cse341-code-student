@@ -1,0 +1,74 @@
+// LOCALHOST 
+### 
+GET http://localhost:8080/contacts
+### 
+GET http://localhost:8080/contacts/63ccd4ea79a9824d637d338e
+### 
+GET http://localhost:8080/contacts/63ccd4ea79a9824d637d338f 
+### 
+GET http://localhost:8080/contacts/63ccd4ea79a9824d637d3390
+
+### Create Contact 
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Joann", 
+    "lastName":"Jenkins", 
+    "email":"jjenkins@gmail.com", 
+    "favoriteColor":"rainbow", 
+    "birthday":"09/26/1965"
+}
+
+### Replace Contact
+PUT http://localhost:8080/contacts/63cefd387e1d065539d37291 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Michael>", 
+    "lastName":"Jackson", 
+    "email":"ThePopKing@gmail.com", 
+    "favoriteColor":"Sparkle", 
+    "birthday":"08/29/1958"
+}
+### Delete Contact
+DELETE http://localhost:8080/contacts/63cefd387e1d065539d37291
+
+
+
+
+// PRODUCTION Deploy 
+### 
+GET https://cse341-week3-crud.onrender.com/contacts
+### 
+GET https://cse341-week3-crud.onrender.com/contacts/63ccd4ea79a9824d637d338e 
+### 
+GET https://cse341-week3-crud.onrender.com/contacts/63ccd4ea79a9824d637d338f 
+### 
+GET https://cse341-week3-crud.onrender.com/contacts/63ccd4ea79a9824d637d3390
+
+### Create Contact 
+POST https://cse341-week3-crud.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Joann", 
+    "lastName":"Jenkins", 
+    "email":"jjenkins@gmail.com", 
+    "favoriteColor":"rainbow", 
+    "birthday":"09/26/1965"
+}
+
+### Replace Contact
+PUT https://cse341-week3-crud.onrender.com/contacts/63cf041f2ca073049fcbe608 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Michael>", 
+    "lastName":"Jackson", 
+    "email":"ThePopKing@gmail.com", 
+    "favoriteColor":"Sparkle", 
+    "birthday":"08/29/1958"
+}
+### Delete Contact
+DELETE https://cse341-week3-crud.onrender.com/contacts/63cf041f2ca073049fcbe608

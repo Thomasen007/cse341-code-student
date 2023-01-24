@@ -1,21 +1,44 @@
 {
-  "name": "w04-class-activity",
+  "name": "cse341-apicourse-code",
   "version": "1.0.0",
-  "description": "",
+  "description": "code to give to students for the cse341 course",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "nodemon ./server.js",
+    "start": "node ./server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "swagger-autogen": "node ./swagger.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanbirch/cse341-apiCourse-code.git"
+  },
+  "author": "Nathan Birch",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanbirch/cse341-apiCourse-code/issues"
+  },
+  "homepage": "https://github.com/nathanbirch/cse341-apiCourse-code#readme",
   "dependencies": {
-    "cookie-parser": "^1.4.6",
-    "dotenv": "^16.0.0",
+    "dotenv": "^16.0.3",
     "express": "^4.17.3",
-    "mongoose": "^6.2.9",
-    "morgan": "^1.10.0"
+    "mongodb": "^4.13.0",
+    "swagger-autogen": "^2.22.0",
+    "swagger-ui-express": "^4.6.0"
   },
   "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.8.3"
   }
 }
