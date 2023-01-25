@@ -5,8 +5,17 @@ const doc = {
     title: 'My API',
     description: 'Description',
   },
-  host: 'https://api-doc-w04.onrender.com',
-  schemes: ['http'],
+  servers: [
+    {
+      url: "http://localhost:8080/",
+      description: "local server"
+    },
+    {
+      url: "https://api-doc-w04.onrender.com",
+      description: "deployed server"
+    }
+  ],
+  schemes: ['http']
 };
 
 const outputFile = './swagger.json';
