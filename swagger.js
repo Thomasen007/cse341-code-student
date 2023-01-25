@@ -3,16 +3,16 @@ const swaggerAutogen = require('swagger-autogen')();
 const doc = {
   info: {
     title: 'My API',
-    description: 'Description',
+    description: 'Description'
   },
   servers: [
     {
-      url: "http://localhost:8080/",
-      description: "local server"
+      url: 'http://localhost:8080/',
+      description: 'local server'
     },
     {
-      url: "https://api-doc-w04.onrender.com",
-      description: "deployed server"
+      url: 'https://api-doc-w04.onrender.com',
+      description: 'deployed server'
     }
   ],
   schemes: ['http']
