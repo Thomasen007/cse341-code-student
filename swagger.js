@@ -6,7 +6,7 @@ const doc = {
     description: 'This is a demonstration of MongoDB CRUD or Create, Read, Update, and Delete. The main features are listed below.',
   },
   host:'api-doc-w04.onrender.com/',
-  schemes: ['http']
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';
