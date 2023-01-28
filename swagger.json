@@ -17,9 +17,7 @@
     }
   ],
   "basePath": "/",
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["http"],
   "paths": {
     "/contacts/": {
       "post": {
@@ -61,9 +59,7 @@
       },
       "get": {
         "description": "This gets all the contacts in the database.",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [],
         "responses": {
           "200": {
@@ -75,9 +71,7 @@
     "/contacts/{id}": {
       "get": {
         "description": "This gets a single contact from the database from the id.",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
