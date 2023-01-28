@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Contacts API",
-    "description": "This is a demonstration of MongoDB CRUD or Create, Read, Update, and Delete. The main features are listed below.",
+    "description": "This is a demonstration of MongoDB CRUD.",
     "version": "1.0.0"
   },
   "host": "api-doc-w04.onrender.com",
