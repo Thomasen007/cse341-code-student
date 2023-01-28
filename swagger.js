@@ -7,11 +7,11 @@ const doc = {
   },
   servers: [
     {
-      url: "https://localhost:8080/",
+      url: "localhost:8080/",
       description: "local server"
     },
     {
-      url: "https://api-doc-w04.onrender.com",
+      url: "api-doc-w04.onrender.com",
       description: "deployed server"
     }
   ],
