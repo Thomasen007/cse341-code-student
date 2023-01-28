@@ -6,18 +6,10 @@
     "version": "1.0.0"
   },
   "host": "api-doc-w04.onrender.com",
-  "servers": [
-    {
-      "url": "localhost:8080/",
-      "description": "local server"
-    },
-    {
-      "url": "api-doc-w04.onrender.com",
-      "description": "deployed server"
-    }
-  ],
   "basePath": "/",
-  "schemes": ["http"],
+  "schemes": [
+    "https"
+  ],
   "paths": {
     "/contacts/": {
       "post": {
@@ -59,7 +51,9 @@
       },
       "get": {
         "description": "This gets all the contacts in the database.",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -71,7 +65,9 @@
     "/contacts/{id}": {
       "get": {
         "description": "This gets a single contact from the database from the id.",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
