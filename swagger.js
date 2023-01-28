@@ -5,18 +5,8 @@ const doc = {
       title: 'Contacts API',
     description: 'This is a demonstration of MongoDB CRUD or Create, Read, Update, and Delete. The main features are listed below.',
   },
-  servers: [
-    {
-      url: "localhost:8080/",
-      description: "local server"
-    },
-    {
-      url: "api-doc-w04.onrender.com",
-      description: "deployed server"
-    }
-  ],
   host:'api-doc-w04.onrender.com',
-  schemes: ['http']
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';
