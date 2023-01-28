@@ -2,4 +2,3 @@ node_modules
 .env
 .eslintrc.json
 .prettierrc
-package-lock.json
