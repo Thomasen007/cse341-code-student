@@ -1,27 +1,19 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API",
-    "description": "Description",
+    "title": "Contacts API",
+    "description": "This is a demonstration of MongoDB CRUD or Create, Read, Update, and Delete. The main features are listed below.",
     "version": "1.0.0"
   },
   "host": "localhost:8080",
   "basePath": "/",
-  "schemes": ["http"],
+  "schemes": [
+    "http"
+  ],
   "paths": {
     "/contacts/": {
-      "get": {
-        "description": "",
-        "produces": ["application/json"],
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
       "post": {
-        "description": "",
+        "description": "This creates a contact in the database.",
         "parameters": [
           {
             "name": "body",
@@ -56,12 +48,27 @@
             "description": "Internal Server Error"
           }
         }
+      },
+      "get": {
+        "description": "This gets all the contacts in the database.",
+        "operationId": "readAll()",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/contacts/{id}": {
       "get": {
-        "description": "",
-        "produces": ["application/json"],
+        "description": "This gets a single contact from the database from the id.",
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -77,7 +84,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "This updates a contact in the database.",
         "parameters": [
           {
             "name": "id",
@@ -120,7 +127,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "The deletes a contact in the database.",
         "parameters": [
           {
             "name": "id",

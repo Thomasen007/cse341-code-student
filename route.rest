@@ -21,7 +21,7 @@ content-type: application/json
 }
 
 ### Replace Contact
-PUT http://localhost:8080/contacts/63cefd387e1d065539d37291 HTTP/1.1
+PUT http://localhost:8080/contacts/63d593ea413bdb4b77376011 HTTP/1.1
 content-type: application/json
 
 {
@@ -32,7 +32,7 @@ content-type: application/json
     "birthday":"08/29/1958"
 }
 ### Delete Contact
-DELETE http://localhost:8080/contacts/63cefd387e1d065539d37291
+DELETE http://localhost:8080/contacts/63d0be8bced039656aae96d2
 
 
 

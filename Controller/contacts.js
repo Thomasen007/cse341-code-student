@@ -2,6 +2,10 @@ const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
+  /*
+  #swagger.description = 'This gets all the contacts in the database.'
+  */
+
   const result = await mongodb.getDb().db().collection('contacts').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
@@ -10,6 +14,9 @@ const getAll = async (req, res) => {
 };
 
 const getSingle = async (req, res) => {
+  /*
+  #swagger.description = 'This gets a single contact from the database from the id.'
+  */
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('contacts').find({ _id: userId });
   result.toArray().then((lists) => {
@@ -19,6 +26,9 @@ const getSingle = async (req, res) => {
 };
 
 const createContact = async (req, res) => {
+  /*
+  #swagger.description = 'This creates a contact in the database.'
+  */
   const contact = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -35,6 +45,9 @@ const createContact = async (req, res) => {
 };
 
 const updateContact = async (req, res) => {
+  /*
+  #swagger.description = 'This updates a contact in the database.'
+  */
   const contact = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -57,6 +70,9 @@ const updateContact = async (req, res) => {
 };
 
 const deleteContact = async (req, res) => {
+  /*
+  #swagger.description = 'The deletes a contact in the database.'
+  */
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('contacts').deleteOne({ _id: userId }, true);
   console.log(result);
