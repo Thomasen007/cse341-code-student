@@ -5,10 +5,10 @@
     "description": "This is a demonstration of MongoDB CRUD or Create, Read, Update, and Delete. The main features are listed below.",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "api-doc-w04.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/contacts/": {
@@ -51,7 +51,6 @@
       },
       "get": {
         "description": "This gets all the contacts in the database.",
-        "operationId": "readAll()",
         "produces": [
           "application/json"
         ],
