@@ -6,9 +6,19 @@
     "version": "1.0.0"
   },
   "host": "api-doc-w04.onrender.com",
+  "servers": [
+    {
+      "url": "localhost:8080/",
+      "description": "local server"
+    },
+    {
+      "url": "api-doc-w04.onrender.com",
+      "description": "deployed server"
+    }
+  ],
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/contacts/": {
