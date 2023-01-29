@@ -39,16 +39,16 @@ DELETE http://localhost:8080/contacts/63d0be8bced039656aae96d2
 
 // PRODUCTION Deploy 
 ### 
-GET https://cse341-week3-crud.onrender.com/contacts
+GET https://api-doc-1-1.onrender.com/contacts
 ### 
-GET https://cse341-week3-crud.onrender.com/contacts/63ccd4ea79a9824d637d338e 
+GET https://api-doc-1-1.onrender.com/contacts/63ccd4ea79a9824d637d338e 
 ### 
-GET https://cse341-week3-crud.onrender.com/contacts/63ccd4ea79a9824d637d338f 
+GET https://api-doc-1-1.onrender.com/contacts/63ccd4ea79a9824d637d338f 
 ### 
-GET https://cse341-week3-crud.onrender.com/contacts/63ccd4ea79a9824d637d3390
+GET https://api-doc-1-1.onrender.com/contacts/63ccd4ea79a9824d637d3390
 
 ### Create Contact 
-POST https://cse341-week3-crud.onrender.com/contacts HTTP/1.1
+POST https://api-doc-1-1.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
@@ -60,7 +60,7 @@ content-type: application/json
 }
 
 ### Replace Contact
-PUT https://cse341-week3-crud.onrender.com/contacts/63d5b17d5db783c738c4ec37 HTTP/1.1
+PUT https://api-doc-1-1.onrender.com/contacts/63d5de6c9ae6dfebe7e7bd5d HTTP/1.1
 content-type: application/json
 
 {
@@ -71,4 +71,4 @@ content-type: application/json
     "birthday":"08/29/1958"
 }
 ### Delete Contact
-DELETE https://cse341-week3-crud.onrender.com/contacts/63d5b17d5db783c738c4ec37
+DELETE https://api-doc-1-1.onrender.com/contacts/63d5de6c9ae6dfebe7e7bd5d

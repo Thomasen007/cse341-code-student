@@ -5,7 +5,7 @@
     "description": "This is a demonstration of MongoDB CRUD.",
     "version": "1.0.0"
   },
-  "host": "api-doc-w04.onrender.com",
+  "host": "api-doc-1-1.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
