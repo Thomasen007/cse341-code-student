@@ -5,7 +5,7 @@ const doc = {
     title: 'Contacts API',
     description: 'This is a demonstration of MongoDB CRUD.'
   },
-  host: 'localhost:8080',
+  host: 'pharmacy-backend-j1rn.onrender.com',
   schemes: ['https']
 };
 

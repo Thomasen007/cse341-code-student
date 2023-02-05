@@ -5,7 +5,7 @@
     "description": "This is a demonstration of MongoDB CRUD.",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "pharmacy-backend-j1rn.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
