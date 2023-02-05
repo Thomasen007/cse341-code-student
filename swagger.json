@@ -13,6 +13,7 @@
   "paths": {
     "/medProfile/": {
       "post": {
+        "tags": [],
         "description": "This creates a Rx in the database.",
         "parameters": [
           {
@@ -71,6 +72,7 @@
         }
       },
       "get": {
+        "tags": [],
         "description": "This gets all the contacts in the database.",
         "produces": [
           "application/json"
@@ -104,6 +106,7 @@
         }
       },
       "put": {
+        "tags": [],
         "description": "This updates a Rx in the database.",
         "parameters": [
           {
@@ -168,6 +171,7 @@
         }
       },
       "delete": {
+        "tags": [],
         "description": "The deletes a Rx in the database.",
         "parameters": [
           {
@@ -189,6 +193,7 @@
     },
     "/patient/": {
       "post": {
+        "tags": [],
         "description": "This creates a patient in the database.",
         "parameters": [
           {
@@ -238,6 +243,7 @@
         }
       },
       "get": {
+        "tags": [],
         "description": "This gets all the patient in the database.",
         "produces": [
           "application/json"
@@ -252,6 +258,7 @@
     },
     "/patient/{id}": {
       "get": {
+        "tags": [],
         "description": "This gets a single patient from the database from the id.",
         "produces": [
           "application/json"
@@ -271,6 +278,7 @@
         }
       },
       "put": {
+        "tags": [],
         "description": "This updates a patient in the database.",
         "parameters": [
           {
@@ -326,7 +334,8 @@
         }
       },
       "delete": {
-        "description": "The deletes a contact in the database.",
+        "tags": [],
+        "description": "The deletes a patient in the database.",
         "parameters": [
           {
             "name": "id",
