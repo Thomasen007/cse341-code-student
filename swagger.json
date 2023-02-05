@@ -1,0 +1,356 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Contacts API",
+    "description": "This is a demonstration of MongoDB CRUD.",
+    "version": "1.0.0"
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/medProfile/": {
+      "post": {
+        "description": "This creates a Rx in the database.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "patientID": {
+                  "example": "any"
+                },
+                "scriptNumber": {
+                  "example": "any"
+                },
+                "storeNumber": {
+                  "example": "any"
+                },
+                "dateWritten": {
+                  "example": "any"
+                },
+                "name": {
+                  "example": "any"
+                },
+                "amount": {
+                  "example": "any"
+                },
+                "dispenceAmount": {
+                  "example": "any"
+                },
+                "expDate": {
+                  "example": "any"
+                },
+                "DAW": {
+                  "example": "any"
+                },
+                "sig": {
+                  "example": "any"
+                },
+                "Doctor": {
+                  "example": "any"
+                },
+                "DAWCode": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "get": {
+        "description": "This gets all the contacts in the database.",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/medProfile/{id}": {
+      "get": {
+        "description": "This gets a single contact from the database from the id.",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "description": "This updates a Rx in the database.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "patientID": {
+                  "example": "any"
+                },
+                "scriptNumber": {
+                  "example": "any"
+                },
+                "storeNumber": {
+                  "example": "any"
+                },
+                "dateWritten": {
+                  "example": "any"
+                },
+                "name": {
+                  "example": "any"
+                },
+                "amount": {
+                  "example": "any"
+                },
+                "dispenceAmount": {
+                  "example": "any"
+                },
+                "expDate": {
+                  "example": "any"
+                },
+                "DAW": {
+                  "example": "any"
+                },
+                "sig": {
+                  "example": "any"
+                },
+                "Doctor": {
+                  "example": "any"
+                },
+                "DAWCode": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "description": "The deletes a Rx in the database.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/patient/": {
+      "post": {
+        "description": "This creates a patient in the database.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "middleIntial": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "dateOfBirth": {
+                  "example": "any"
+                },
+                "gender": {
+                  "example": "any"
+                },
+                "address": {
+                  "example": "any"
+                },
+                "id": {
+                  "example": "any"
+                },
+                "contact": {
+                  "example": "any"
+                },
+                "insurance": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "get": {
+        "description": "This gets all the patient in the database.",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/patient/{id}": {
+      "get": {
+        "description": "This gets a single patient from the database from the id.",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "description": "This updates a patient in the database.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "middleIntial": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "dateOfBirth": {
+                  "example": "any"
+                },
+                "gender": {
+                  "example": "any"
+                },
+                "address": {
+                  "example": "any"
+                },
+                "id": {
+                  "example": "any"
+                },
+                "contact": {
+                  "example": "any"
+                },
+                "insurance": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "description": "The deletes a contact in the database.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/swagger/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    }
+  }
+}
