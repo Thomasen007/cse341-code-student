@@ -1,4 +1,4 @@
-/ LOCALHOST 
+// LOCALHOST 
 ### Get all the Patients
 GET http:/localhost:8080/patient
 ### Get a single patient
@@ -200,7 +200,7 @@ DELETE http:/localhost:8080/medProfile/63df532a607cfa881ae48bac
 
 
 
-/ Deployed Host 
+// Deployed Host 
 ### Get all the Patients
 GET https://pharmacy-backend-j1rn.onrender.com/patient
 ### Get a single patient
