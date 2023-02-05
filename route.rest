@@ -1,10 +1,10 @@
 // LOCALHOST 
 ### Get all the Patients
-GET http:/localhost:8080/patient
+GET https://localhost:8080/patient
 ### Get a single patient
-GET http:/localhost:8080/patient/63df09e09b40ecefc327f98a
+GET https://localhost:8080/patient/63df09e09b40ecefc327f98a
 ### Create patient
-POST http:/localhost:8080/patient HTTP/1.1
+POST https://localhost:8080/patient HTTP/1.1
 content-type: application/json
 
 {
@@ -67,9 +67,9 @@ content-type: application/json
         }
 }
 ### Get a single new patient
-GET http:/localhost:8080/patient/63df524450fae7443a0bf4e6 
+GET https://localhost:8080/patient/63df524450fae7443a0bf4e6 
 ### Replace patient information
-PUT http:/localhost:8080/patient/63df524450fae7443a0bf4e6 HTTP/1.1
+PUT https://localhost:8080/patient/63df524450fae7443a0bf4e6 HTTP/1.1
 content-type: application/json
 
 {
@@ -132,16 +132,16 @@ content-type: application/json
         }
 }
 ### Delete patient
-DELETE http:/localhost:8080/patient/63df524450fae7443a0bf4e6
+DELETE https://localhost:8080/patient/63df524450fae7443a0bf4e6
 
 
 
 ### Get all the medications
-GET http:/localhost:8080/medProfile
+GET https://localhost:8080/medProfile
 ### Get a single medication
-GET http:/localhost:8080/medProfile/63df099c9b40ecefc327f988
+GET https://localhost:8080/medProfile/63df099c9b40ecefc327f988
 ### Create Rx
-POST http:/localhost:8080/medProfile HTTP/1.1
+POST https://localhost:8080/medProfile HTTP/1.1
 content-type: application/json
 
 {
@@ -167,9 +167,9 @@ content-type: application/json
         "DAWCode": "1"
 }
 ### Get a single medication
-GET http:/localhost:8080/medProfile/63df532a607cfa881ae48bac
+GET https://localhost:8080/medProfile/63df532a607cfa881ae48bac
 ### Update Rx information
-PUT http:/localhost:8080/medProfile/63df532a607cfa881ae48bac HTTP/1.1
+PUT https://localhost:8080/medProfile/63df532a607cfa881ae48bac HTTP/1.1
 content-type: application/json
 
 {
@@ -196,7 +196,7 @@ content-type: application/json
 }
 
 ### Delete Contact
-DELETE http:/localhost:8080/medProfile/63df532a607cfa881ae48bac
+DELETE https://localhost:8080/medProfile/63df532a607cfa881ae48bac
 
 
 
@@ -206,7 +206,7 @@ GET https://pharmacy-backend-j1rn.onrender.com/patient
 ### Get a single patient
 GET https://pharmacy-backend-j1rn.onrender.com/patient/63df09e09b40ecefc327f98a
 ### Create patient
-POST http:/pharmacy-backend-j1rn.onrender.com/patient HTTP/1.1
+POST https://pharmacy-backend-j1rn.onrender.com/patient HTTP/1.1
 content-type: application/json
 
 {
@@ -269,9 +269,9 @@ content-type: application/json
         }
 }
 ### Get a single new patient
-GET http:/pharmacy-backend-j1rn.onrender.com/patient/63df524450fae7443a0bf4e6 
+GET https://pharmacy-backend-j1rn.onrender.com/patient/63df524450fae7443a0bf4e6 
 ### Replace patient information
-PUT http:/pharmacy-backend-j1rn.onrender.com/patient/63df524450fae7443a0bf4e6 HTTP/1.1
+PUT https://pharmacy-backend-j1rn.onrender.com/patient/63df524450fae7443a0bf4e6 HTTP/1.1
 content-type: application/json
 
 {
@@ -334,16 +334,16 @@ content-type: application/json
         }
 }
 ### Delete patient
-DELETE http:/pharmacy-backend-j1rn.onrender.com/patient/63df524450fae7443a0bf4e6
+DELETE https://pharmacy-backend-j1rn.onrender.com/patient/63df524450fae7443a0bf4e6
 
 
 
 ### Get all the medications
-GET http:/pharmacy-backend-j1rn.onrender.com/medProfile
+GET https://pharmacy-backend-j1rn.onrender.com/medProfile
 ### Get a single medication
-GET http:/pharmacy-backend-j1rn.onrender.com/medProfile/63df099c9b40ecefc327f988
+GET https://pharmacy-backend-j1rn.onrender.com/medProfile/63df099c9b40ecefc327f988
 ### Create Rx
-POST http:/pharmacy-backend-j1rn.onrender.com/medProfile HTTP/1.1
+POST https://pharmacy-backend-j1rn.onrender.com/medProfile HTTP/1.1
 content-type: application/json
 
 {
@@ -369,9 +369,9 @@ content-type: application/json
         "DAWCode": "1"
 }
 ### Get a single medication
-GET http:/pharmacy-backend-j1rn.onrender.com/medProfile/63df532a607cfa881ae48bac
+GET https://pharmacy-backend-j1rn.onrender.com/medProfile/63df59be8661b33c4430b3a7
 ### Update Rx information
-PUT http:/pharmacy-backend-j1rn.onrender.com/medProfile/63df532a607cfa881ae48bac HTTP/1.1
+PUT https://pharmacy-backend-j1rn.onrender.com/medProfile/63df59be8661b33c4430b3a7 HTTP/1.1
 content-type: application/json
 
 {
@@ -398,4 +398,4 @@ content-type: application/json
 }
 
 ### Delete Contact
-DELETE http:/pharmacy-backend-j1rn.onrender.com/medProfile/63df532a607cfa881ae48bac
+DELETE https://pharmacy-backend-j1rn.onrender.com/medProfile/63df59be8661b33c4430b3a7
