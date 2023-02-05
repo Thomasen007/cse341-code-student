@@ -4,7 +4,7 @@ const ObjectId = require('mongodb').ObjectId;
 const getAll = async (req, res) => {
   /*
   #swagger.description = 'This gets all the patient in the database.'
-  #swagger.tags = 'Patient Profile'
+  #swagger.tags = ['Patient Profile']
   */
 
   const result = await mongodb.getDb().db().collection('patient').find();
@@ -17,7 +17,7 @@ const getAll = async (req, res) => {
 const getSingle = async (req, res) => {
   /*
   #swagger.description = 'This gets a single patient from the database from the id.'
-  #swagger.tags = 'Patient Profile'
+  #swagger.tags = ['Patient Profile']
   */
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('patient').find({ _id: userId });
@@ -30,7 +30,7 @@ const getSingle = async (req, res) => {
 const createPatient = async (req, res) => {
   /*
   #swagger.description = 'This creates a patient in the database.'
-  #swagger.tags = 'Patient Profile'
+  #swagger.tags = ['Patient Profile']
   */
   const patient = {
     firstName: req.body.firstName,
@@ -54,7 +54,7 @@ const createPatient = async (req, res) => {
 const updatePatient= async (req, res) => {
   /*
   #swagger.description = 'This updates a patient in the database.'
-  #swagger.tags = 'Patient Profile'
+  #swagger.tags = ['Patient Profile']
   */
   const patient = {
     firstName: req.body.firstName,
@@ -84,7 +84,7 @@ const updatePatient= async (req, res) => {
 const deletePatient = async (req, res) => {
   /*
   #swagger.description = 'The deletes a patient in the database.'
-  #swagger.tags = 'Patient Profile'
+  #swagger.tags = ['Patient Profile']
   */
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('patient').deleteOne({ _id: userId }, true);
