@@ -13,7 +13,9 @@
   "paths": {
     "/medProfile/": {
       "post": {
-        "tags": [],
+        "tags": [
+          "Medication Profile"
+        ],
         "description": "This creates a Rx in the database.",
         "parameters": [
           {
@@ -72,7 +74,9 @@
         }
       },
       "get": {
-        "tags": [],
+        "tags": [
+          "Medication Profile"
+        ],
         "description": "This gets all the contacts in the database.",
         "produces": [
           "application/json"
@@ -87,6 +91,9 @@
     },
     "/medProfile/{id}": {
       "get": {
+        "tags": [
+          "Medication Profile"
+        ],
         "description": "This gets a single contact from the database from the id.",
         "produces": [
           "application/json"
@@ -106,7 +113,9 @@
         }
       },
       "put": {
-        "tags": [],
+        "tags": [
+          "Medication Profile"
+        ],
         "description": "This updates a Rx in the database.",
         "parameters": [
           {
@@ -171,7 +180,9 @@
         }
       },
       "delete": {
-        "tags": [],
+        "tags": [
+          "Medication Profile"
+        ],
         "description": "The deletes a Rx in the database.",
         "parameters": [
           {
@@ -193,7 +204,9 @@
     },
     "/patient/": {
       "post": {
-        "tags": [],
+        "tags": [
+          "Patient Profile"
+        ],
         "description": "This creates a patient in the database.",
         "parameters": [
           {
@@ -243,7 +256,9 @@
         }
       },
       "get": {
-        "tags": [],
+        "tags": [
+          "Patient Profile"
+        ],
         "description": "This gets all the patient in the database.",
         "produces": [
           "application/json"
@@ -258,7 +273,9 @@
     },
     "/patient/{id}": {
       "get": {
-        "tags": [],
+        "tags": [
+          "Patient Profile"
+        ],
         "description": "This gets a single patient from the database from the id.",
         "produces": [
           "application/json"
@@ -278,7 +295,9 @@
         }
       },
       "put": {
-        "tags": [],
+        "tags": [
+          "Patient Profile"
+        ],
         "description": "This updates a patient in the database.",
         "parameters": [
           {
@@ -334,7 +353,9 @@
         }
       },
       "delete": {
-        "tags": [],
+        "tags": [
+          "Patient Profile"
+        ],
         "description": "The deletes a patient in the database.",
         "parameters": [
           {
