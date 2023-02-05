@@ -1,0 +1,21 @@
+{
+    "medication":{
+        "dateWritten":"02/03/2022",
+        "name":"Atorvastatin 80mg",
+        "amount":"30",
+        "dispenceAmount":"30",
+        "expDate":"02/03/2023",
+        "DAW":false,
+        "sig":"Take 1 tablet once daily",
+        "Doctor":{
+            "firstName":"Benjamin",
+            "LastName":"Carcao",
+            "NPI":"15986324",
+            "DEA":"AC12599862",
+            "phoneNumber":"888-223-6988",
+            "faxNumber":"877-354-2310",
+            "address":"875 Oak St"
+        },
+        "DAWCode":"0"
+    }
+}

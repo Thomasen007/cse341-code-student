@@ -1,0 +1,61 @@
+{
+    "Patient":{
+        "firstName": "Bob" ,
+        "middleIntial": "E",
+        "lastName": "Howdy",
+        "dateOfBirth": "06/16/1964",
+        "gender": "M",
+        "address": "123 Main St",
+        "contact": {
+            "number1":{
+                "type": "object",
+                "phone": "555-336-5840",
+                "variety": {"type": "Cell"},
+                "text": true
+            },
+            "number2":{
+                "type": "object",
+                "phone": "555-336-2840",
+                "variety": {"type": "Home"},
+                "text": false
+            },
+            "number3":{
+                "type": "object",
+                "phone": "",
+                "variety": {},
+                "text": false
+            },
+            "email":{
+                "primary": "behowdy@test.com",
+                "secondary": ""
+            }
+            
+        },
+        "insurance":{
+            "primary":{
+                "insurancePlan": "gwestcom",
+                "bin": "610012",
+                "pcn": "adv",
+                "patientID": "1586158401",
+                "rxGroup": "GeorgiaPies"
+            },
+            "secondary":{
+                "insurancePlan": "medicare",
+                "bin": "12345",
+                "pcn": "medicare",
+                "patientID": "jk5759p5d5",
+                "rxGroup": ""
+            },
+            "tertiary":{
+                "insurancePlan": "",
+                "bin": "",
+                "pcn": "",
+                "patientID": "",
+                "rxGroup": ""
+            }
+
+            
+        }
+    }
+  
+}
