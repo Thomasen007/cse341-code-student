@@ -202,9 +202,9 @@ DELETE http:/localhost:8080/medProfile/63df532a607cfa881ae48bac
 
 / Deployed Host 
 ### Get all the Patients
-GET https:/pharmacy-backend-j1rn.onrender.com/patient
+GET https://pharmacy-backend-j1rn.onrender.com/patient
 ### Get a single patient
-GET https:/pharmacy-backend-j1rn.onrender.com/patient/63df09e09b40ecefc327f98a
+GET https://pharmacy-backend-j1rn.onrender.com/patient/63df09e09b40ecefc327f98a
 ### Create patient
 POST http:/pharmacy-backend-j1rn.onrender.com/patient HTTP/1.1
 content-type: application/json
