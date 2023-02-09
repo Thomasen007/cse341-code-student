@@ -1,5 +1,6 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
+const validate = require('../validate')
 
 const getAll = async (req, res) => {
   const result = await mongodb.getDb().db().collection('contacts').find();
@@ -19,6 +20,7 @@ const getSingle = async (req, res) => {
 };
 
 const createContact = async (req, res) => {
+
   const contact = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -26,6 +28,7 @@ const createContact = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday
   };
+  
   const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
   if (response.acknowledged) {
     res.status(201).json(response);

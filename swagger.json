@@ -5,7 +5,7 @@
     "description": "Temple API",
     "version": "1.0.0"
   },
-  "host": "cse341-instructor.herokuapp.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
     "https"
@@ -62,6 +62,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "402": {
+            "description": "Payment Required"
           },
           "500": {
             "description": "Internal Server Error"
@@ -126,6 +129,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "402": {
+            "description": "Payment Required"
           },
           "500": {
             "description": "Internal Server Error"
