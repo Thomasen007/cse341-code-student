@@ -1,10 +1,10 @@
 // LOCALHOST 
 ### Get all the Patients
-GET https://localhost:8080/patient
+GET http://localhost:8080/patient
 ### Get a single patient
-GET https://localhost:8080/patient/63df09e09b40ecefc327f98a
+GET http://localhost:8080/patient/63df09e09b40ecefc327f98a
 ### Create patient
-POST https://localhost:8080/patient HTTP/1.1
+POST http://localhost:8080/patient HTTP/1.1
 content-type: application/json
 
 {
@@ -67,9 +67,9 @@ content-type: application/json
         }
 }
 ### Get a single new patient
-GET https://localhost:8080/patient/63df524450fae7443a0bf4e6 
+GET http://localhost:8080/patient/63f12087068e9ace62435fe2 
 ### Replace patient information
-PUT https://localhost:8080/patient/63df524450fae7443a0bf4e6 HTTP/1.1
+PUT http://localhost:8080/patient/63f1198cccd6f60f1310e0d0 HTTP/1.1
 content-type: application/json
 
 {
@@ -132,16 +132,16 @@ content-type: application/json
         }
 }
 ### Delete patient
-DELETE https://localhost:8080/patient/63df524450fae7443a0bf4e6
+DELETE http://localhost:8080/patient/63f1198cccd6f60f1310e0d0
 
 
 
 ### Get all the medications
-GET https://localhost:8080/medProfile
+GET http://localhost:8080/medProfile
 ### Get a single medication
-GET https://localhost:8080/medProfile/63df099c9b40ecefc327f988
+GET http://localhost:8080/medProfile/63df099c9b40ecefc327f988
 ### Create Rx
-POST https://localhost:8080/medProfile HTTP/1.1
+POST http://localhost:8080/medProfile HTTP/1.1
 content-type: application/json
 
 {
@@ -167,9 +167,9 @@ content-type: application/json
         "DAWCode": "1"
 }
 ### Get a single medication
-GET https://localhost:8080/medProfile/63df532a607cfa881ae48bac
+GET http://localhost:8080/medProfile/63f11c52f06a83f1fa99f93a
 ### Update Rx information
-PUT https://localhost:8080/medProfile/63df532a607cfa881ae48bac HTTP/1.1
+PUT http://localhost:8080/medProfile/63f11c52f06a83f1fa99f93a HTTP/1.1
 content-type: application/json
 
 {
@@ -181,7 +181,7 @@ content-type: application/json
         "amount": "90",
         "dispenceAmount": "90",
         "expDate": "02/03/2023",
-        "DAW": true,
+        "DAW": false,
         "sig": "Take ½ tablet by mouth twice daily",
         "Doctor":{
             "firstName": "Connor",
@@ -196,7 +196,7 @@ content-type: application/json
 }
 
 ### Delete Contact
-DELETE https://localhost:8080/medProfile/63df532a607cfa881ae48bac
+DELETE http://localhost:8080/medProfile/63f11c52f06a83f1fa99f93a
 
 
 

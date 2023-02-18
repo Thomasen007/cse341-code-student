@@ -19,6 +19,8 @@ const getSingle = async (req, res) => {
   #swagger.description = 'This gets a single contact from the database from the id.'
   #swagger.tags = ['Medication Profile']
   */
+  if (!ObjectId.isValid(req.params.id)) {  
+    return res.status(404).send("Must use a valid contact id to find a contact.");}
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('medProfile').find({ _id: userId });
   result.toArray().then((lists) => {
@@ -59,6 +61,8 @@ const updateRx = async (req, res) => {
   #swagger.description = 'This updates a Rx in the database.'
   #swagger.tags = ['Medication Profile']
   */
+  if (!ObjectId.isValid(req.params.id)) {  
+    return res.status(404).send("Must use a valid contact id to find a contact.");}
   const medication = {
     patientID: req.body.patientID,
     scriptNumber: req.body.scriptNumber,
@@ -92,6 +96,8 @@ const deleteRx = async (req, res) => {
   #swagger.description = 'The deletes a Rx in the database.'
   #swagger.tags = ['Medication Profile']
   */
+  if (!ObjectId.isValid(req.params.id)) {  
+    return res.status(404).send("Must use a valid contact id to find a contact.");}
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('medProfile').deleteOne({ _id: userId }, true);
   console.log(result);

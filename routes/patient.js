@@ -2,14 +2,15 @@ const express = require('express');
 const router = express.Router();
 
 const patientController = require('../controller/patient');
+const validate = require('../validate');
 
-router.post('/', patientController.createPatient);
+router.post('/', validate.cleanPatient, patientController.createPatient);
 
 router.get('/', patientController.getAll);
 
 router.get('/:id', patientController.getSingle);
 
-router.put('/:id', patientController.updatePatient);
+router.put('/:id',  validate.cleanPatient, patientController.updatePatient);
 
 router.delete('/:id', patientController.deletePatient);
 

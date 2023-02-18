@@ -5,7 +5,7 @@
     "description": "This is a demonstration of MongoDB CRUD.",
     "version": "1.0.0"
   },
-  "host": "pharmacy-backend-j1rn.onrender.com",
+  "host": "pharmacy-validation-check.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -68,6 +68,9 @@
           "201": {
             "description": "Created"
           },
+          "404": {
+            "description": "Not Found"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -109,6 +112,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
           }
         }
       },
@@ -174,6 +180,9 @@
           "204": {
             "description": "No Content"
           },
+          "404": {
+            "description": "Not Found"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -195,6 +204,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"
@@ -250,6 +262,9 @@
           "201": {
             "description": "Created"
           },
+          "404": {
+            "description": "Not Found"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -291,6 +306,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
           }
         }
       },
@@ -347,6 +365,9 @@
           "204": {
             "description": "No Content"
           },
+          "404": {
+            "description": "Not Found"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -368,6 +389,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "404": {
+            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"

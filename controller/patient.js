@@ -6,7 +6,6 @@ const getAll = async (req, res) => {
   #swagger.description = 'This gets all the patient in the database.'
   #swagger.tags = ['Patient Profile']
   */
-
   const result = await mongodb.getDb().db().collection('patient').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
@@ -19,6 +18,8 @@ const getSingle = async (req, res) => {
   #swagger.description = 'This gets a single patient from the database from the id.'
   #swagger.tags = ['Patient Profile']
   */
+  if (!ObjectId.isValid(req.params.id)) {  
+    return res.status(404).send("Must use a valid contact id to find a contact.");}
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('patient').find({ _id: userId });
   result.toArray().then((lists) => {
@@ -56,6 +57,8 @@ const updatePatient= async (req, res) => {
   #swagger.description = 'This updates a patient in the database.'
   #swagger.tags = ['Patient Profile']
   */
+  if (!ObjectId.isValid(req.params.id)) {  
+    return res.status(404).send("Must use a valid contact id to find a contact.");}
   const patient = {
     firstName: req.body.firstName,
     middleIntial: req.body.middleIntial,
@@ -86,6 +89,8 @@ const deletePatient = async (req, res) => {
   #swagger.description = 'The deletes a patient in the database.'
   #swagger.tags = ['Patient Profile']
   */
+  if (!ObjectId.isValid(req.params.id)) {  
+    return res.status(404).send("Must use a valid contact id to find a contact.");}
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('patient').deleteOne({ _id: userId }, true);
   console.log(result);

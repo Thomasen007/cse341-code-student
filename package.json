@@ -29,8 +29,8 @@
     "mongodb": "^4.13.0",
     "nodemon": "^2.0.20",
     "prettier": "^2.8.3",
-    "restclient": "^0.1.3",
     "swagger-autogen": "^2.23.0",
-    "swagger-ui-express": "^4.6.0"
+    "swagger-ui-express": "^4.6.0",
+    "validatorjs": "^3.22.1"
   }
 }
