@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CSE341 Lesson 6 Class Activity
 
 ## Steps to complete activity
@@ -7,3 +6,4 @@ There will be no code in this class activity. This activity is meant to help stu
 
 - Open the [CSE 341 Class Activity 6 Template](https://docs.google.com/document/d/1iTkRr0A0Xk7Rt8mcevopuinQVUlH0j9EvQbFT0Dmj1M/edit?usp=sharing) document and work through the questions with a partner.
 - Click File then Make Copy (You will not be able to edit the original)
+
