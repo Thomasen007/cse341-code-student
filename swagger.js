@@ -2,8 +2,8 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: 'Contacts API',
-    description: 'This is a demonstration of MongoDB CRUD.'
+    title: 'Pharmacy API',
+    description: 'This is the API for a backend pharmacy system.'
   },
   host: 'pharmacy-validation-check.onrender.com',
   schemes: ['https']
