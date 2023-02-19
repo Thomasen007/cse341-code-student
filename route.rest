@@ -1,0 +1,401 @@
+// LOCALHOST 
+### Get all the Patients
+GET http://localhost:8080/patient
+### Get a single patient
+GET http://localhost:8080/patient/63df09e09b40ecefc327f98a
+### Create patient
+POST http://localhost:8080/patient HTTP/1.1
+content-type: application/json
+
+{
+        "firstName": "Barbara" ,
+        "middleIntial": "M",
+        "lastName": "Maximus",
+        "dateOfBirth": "10/13/1964",
+        "gender": "F",
+        "address": "5889 Coach Dr",
+        "id":"15568",
+        "contact": {
+            "number1":{
+                "type": "object",
+                "phone": "555-368-5518",
+                "variety": {"type": "Cell"},
+                "text": true
+            },
+            "number2":{
+                "type": "object",
+                "phone": "555-325-5663",
+                "variety": {"type": "Home"},
+                "text": false
+            },
+            "number3":{
+                "type": "object",
+                "phone": "566-226-9981",
+                "variety": {"type": "Work"},
+                "text": true
+            },
+            "email":{
+                "primary": "bmaximus@test.com",
+                "secondary": "barbara@maximus.com"
+            }
+            
+        },
+        "insurance":{
+            "primary":{
+                "insurancePlan": "APM",
+                "bin": "004336",
+                "pcn": "adv",
+                "patientID": "155892256",
+                "rxGroup": "MaximusCo"
+            },
+            "secondary":{
+                "insurancePlan": "",
+                "bin": "",
+                "pcn": "",
+                "patientID": "",
+                "rxGroup": ""
+            },
+            "tertiary":{
+                "insurancePlan": "",
+                "bin": "",
+                "pcn": "",
+                "patientID": "",
+                "rxGroup": ""
+            }
+
+            
+        }
+}
+### Get a single new patient
+GET http://localhost:8080/patient/63f12087068e9ace62435fe2 
+### Replace patient information
+PUT http://localhost:8080/patient/63f1198cccd6f60f1310e0d0 HTTP/1.1
+content-type: application/json
+
+{
+        "firstName": "Barbara" ,
+        "middleIntial": "M",
+        "lastName": "Minimus",
+        "dateOfBirth": "10/13/1964",
+        "gender": "F",
+        "address": "5863 Sunset Ave",
+        "id":"15568",
+        "contact": {
+            "number1":{
+                "type": "object",
+                "phone": "555-368-5518",
+                "variety": {"type": "Cell"},
+                "text": true
+            },
+            "number2":{
+                "type": "object",
+                "phone": "555-325-5663",
+                "variety": {"type": "Home"},
+                "text": false
+            },
+            "number3":{
+                "type": "object",
+                "phone": "566-226-9981",
+                "variety": {"type": "Work"},
+                "text": true
+            },
+            "email":{
+                "primary": "bminimus@test.com",
+                "secondary": "barbara@minimus.com"
+            }
+            
+        },
+        "insurance":{
+            "primary":{
+                "insurancePlan": "APM",
+                "bin": "004336",
+                "pcn": "adv",
+                "patientID": "15589365",
+                "rxGroup": "minimusCo"
+            },
+            "secondary":{
+                "insurancePlan": "",
+                "bin": "",
+                "pcn": "",
+                "patientID": "",
+                "rxGroup": ""
+            },
+            "tertiary":{
+                "insurancePlan": "",
+                "bin": "",
+                "pcn": "",
+                "patientID": "",
+                "rxGroup": ""
+            }
+
+            
+        }
+}
+### Delete patient
+DELETE http://localhost:8080/patient/63f1198cccd6f60f1310e0d0
+
+
+
+### Get all the medications
+GET http://localhost:8080/medProfile
+### Get a single medication
+GET http://localhost:8080/medProfile/63df099c9b40ecefc327f988
+### Create Rx
+POST http://localhost:8080/medProfile HTTP/1.1
+content-type: application/json
+
+{
+        "patientID": "123466",
+        "scriptNumber": "125862",
+        "storeNumber": "5589",
+        "dateWritten": "02/01/2022",
+        "name": "Lisinopril 20mg tablet",
+        "amount": "90",
+        "dispenceAmount": "90",
+        "expDate": "02/03/2023",
+        "DAW": true,
+        "sig": "Take 1 tablet by mouth once daily",
+        "Doctor":{
+            "firstName": "Connor",
+            "LastName": "Monico",
+            "NPI": "1577896",
+            "DEA": "AM56632887",
+            "phoneNumber": "888-223-5896",
+            "faxNumber": "877-287-9683",
+            "address": "5978 Country Lp"
+        },
+        "DAWCode": "1"
+}
+### Get a single medication
+GET http://localhost:8080/medProfile/63f11c52f06a83f1fa99f93a
+### Update Rx information
+PUT http://localhost:8080/medProfile/63f11c52f06a83f1fa99f93a HTTP/1.1
+content-type: application/json
+
+{
+        "patientID": "123466",
+        "scriptNumber": "125862",
+        "storeNumber": "5589",
+        "dateWritten": "02/01/2022",
+        "name": "Lisinopril 20mg tablet",
+        "amount": "90",
+        "dispenceAmount": "90",
+        "expDate": "02/03/2023",
+        "DAW": false,
+        "sig": "Take ½ tablet by mouth twice daily",
+        "Doctor":{
+            "firstName": "Connor",
+            "LastName": "Monico",
+            "NPI": "1577896",
+            "DEA": "AM56632887",
+            "phoneNumber": "888-223-5896",
+            "faxNumber": "877-287-9683",
+            "address": "5978 Country Lp"
+        },
+        "DAWCode": "1"
+}
+
+### Delete Contact
+DELETE http://localhost:8080/medProfile/63f11c52f06a83f1fa99f93a
+
+
+
+// Deployed Host 
+### Get all the Patients
+GET https://pharmacy-backend-j1rn.onrender.com/patient
+### Get a single patient
+GET https://pharmacy-backend-j1rn.onrender.com/patient/63df09e09b40ecefc327f98a
+### Create patient
+POST https://pharmacy-backend-j1rn.onrender.com/patient HTTP/1.1
+content-type: application/json
+
+{
+        "firstName": "Barbara" ,
+        "middleIntial": "M",
+        "lastName": "Maximus",
+        "dateOfBirth": "10/13/1964",
+        "gender": "F",
+        "address": "5889 Coach Dr",
+        "id":"15568",
+        "contact": {
+            "number1":{
+                "type": "object",
+                "phone": "555-368-5518",
+                "variety": {"type": "Cell"},
+                "text": true
+            },
+            "number2":{
+                "type": "object",
+                "phone": "555-325-5663",
+                "variety": {"type": "Home"},
+                "text": false
+            },
+            "number3":{
+                "type": "object",
+                "phone": "566-226-9981",
+                "variety": {"type": "Work"},
+                "text": true
+            },
+            "email":{
+                "primary": "bmaximus@test.com",
+                "secondary": "barbara@maximus.com"
+            }
+            
+        },
+        "insurance":{
+            "primary":{
+                "insurancePlan": "APM",
+                "bin": "004336",
+                "pcn": "adv",
+                "patientID": "155892256",
+                "rxGroup": "MaximusCo"
+            },
+            "secondary":{
+                "insurancePlan": "",
+                "bin": "",
+                "pcn": "",
+                "patientID": "",
+                "rxGroup": ""
+            },
+            "tertiary":{
+                "insurancePlan": "",
+                "bin": "",
+                "pcn": "",
+                "patientID": "",
+                "rxGroup": ""
+            }
+
+            
+        }
+}
+### Get a single new patient
+GET https://pharmacy-backend-j1rn.onrender.com/patient/63df524450fae7443a0bf4e6 
+### Replace patient information
+PUT https://pharmacy-backend-j1rn.onrender.com/patient/63df524450fae7443a0bf4e6 HTTP/1.1
+content-type: application/json
+
+{
+        "firstName": "Barbara" ,
+        "middleIntial": "M",
+        "lastName": "Minimus",
+        "dateOfBirth": "10/13/1964",
+        "gender": "F",
+        "address": "5863 Sunset Ave",
+        "id":"15568",
+        "contact": {
+            "number1":{
+                "type": "object",
+                "phone": "555-368-5518",
+                "variety": {"type": "Cell"},
+                "text": true
+            },
+            "number2":{
+                "type": "object",
+                "phone": "555-325-5663",
+                "variety": {"type": "Home"},
+                "text": false
+            },
+            "number3":{
+                "type": "object",
+                "phone": "566-226-9981",
+                "variety": {"type": "Work"},
+                "text": true
+            },
+            "email":{
+                "primary": "bminimus@test.com",
+                "secondary": "barbara@minimus.com"
+            }
+            
+        },
+        "insurance":{
+            "primary":{
+                "insurancePlan": "APM",
+                "bin": "004336",
+                "pcn": "adv",
+                "patientID": "15589365",
+                "rxGroup": "minimusCo"
+            },
+            "secondary":{
+                "insurancePlan": "",
+                "bin": "",
+                "pcn": "",
+                "patientID": "",
+                "rxGroup": ""
+            },
+            "tertiary":{
+                "insurancePlan": "",
+                "bin": "",
+                "pcn": "",
+                "patientID": "",
+                "rxGroup": ""
+            }
+
+            
+        }
+}
+### Delete patient
+DELETE https://pharmacy-backend-j1rn.onrender.com/patient/63df524450fae7443a0bf4e6
+
+
+
+### Get all the medications
+GET https://pharmacy-backend-j1rn.onrender.com/medProfile
+### Get a single medication
+GET https://pharmacy-backend-j1rn.onrender.com/medProfile/63df099c9b40ecefc327f988
+### Create Rx
+POST https://pharmacy-backend-j1rn.onrender.com/medProfile HTTP/1.1
+content-type: application/json
+
+{
+        "patientID": "123466",
+        "scriptNumber": "125862",
+        "storeNumber": "5589",
+        "dateWritten": "02/01/2022",
+        "name": "Lisinopril 20mg tablet",
+        "amount": "90",
+        "dispenceAmount": "90",
+        "expDate": "02/03/2023",
+        "DAW": true,
+        "sig": "Take 1 tablet by mouth once daily",
+        "Doctor":{
+            "firstName": "Connor",
+            "LastName": "Monico",
+            "NPI": "1577896",
+            "DEA": "AM56632887",
+            "phoneNumber": "888-223-5896",
+            "faxNumber": "877-287-9683",
+            "address": "5978 Country Lp"
+        },
+        "DAWCode": "1"
+}
+### Get a single medication
+GET https://pharmacy-backend-j1rn.onrender.com/medProfile/63df59be8661b33c4430b3a7
+### Update Rx information
+PUT https://pharmacy-backend-j1rn.onrender.com/medProfile/63df59be8661b33c4430b3a7 HTTP/1.1
+content-type: application/json
+
+{
+        "patientID": "123466",
+        "scriptNumber": "125862",
+        "storeNumber": "5589",
+        "dateWritten": "02/01/2022",
+        "name": "Lisinopril 20mg tablet",
+        "amount": "90",
+        "dispenceAmount": "90",
+        "expDate": "02/03/2023",
+        "DAW": true,
+        "sig": "Take ½ tablet by mouth twice daily",
+        "Doctor":{
+            "firstName": "Connor",
+            "LastName": "Monico",
+            "NPI": "1577896",
+            "DEA": "AM56632887",
+            "phoneNumber": "888-223-5896",
+            "faxNumber": "877-287-9683",
+            "address": "5978 Country Lp"
+        },
+        "DAWCode": "1"
+}
+
+### Delete Contact
+DELETE https://pharmacy-backend-j1rn.onrender.com/medProfile/63df59be8661b33c4430b3a7
